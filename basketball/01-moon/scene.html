@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+  canvas { display: block; }
+  #ui { position: absolute; inset: 0; pointer-events: none; font-family: 'Inter', sans-serif; color: #fff; }
+  .stage { position: absolute; top: 150px; left: 0; right: 0; text-align: center; opacity: 0; }
+  .stage .num { font-size: 34px; font-weight: 700; letter-spacing: 8px; color: #ffb547; }
+  .stage .name { font-size: 64px; font-weight: 900; letter-spacing: 2px; margin-top: 6px;
+                 text-shadow: 0 4px 24px rgba(0,0,0,.8); }
+  #title { position: absolute; top: 260px; left: 60px; right: 60px; text-align: center; opacity: 0;
+           font-size: 92px; font-weight: 900; line-height: 1.02; text-shadow: 0 6px 30px rgba(0,0,0,.9); }
+  #title span { color: #ffb547; }
+  #cap { position: absolute; bottom: 430px; left: 70px; right: 70px; text-align: center;
+         font-size: 66px; font-weight: 900; line-height: 1.12;
+         -webkit-text-stroke: 3px #000; paint-order: stroke fill;
+         text-shadow: 0 6px 18px rgba(0,0,0,.9); }
+  #cap b { color: #ffd23f; }
+  .chip { position: absolute; left: 50%; transform: translateX(-50%); bottom: 760px; white-space: nowrap;
+          background: rgba(10,10,14,.72); border: 2px solid rgba(255,181,71,.8); border-radius: 22px;
+          padding: 18px 34px; font-size: 44px; font-weight: 800; opacity: 0; }
+  .chip small { display: block; font-size: 26px; font-weight: 600; color: #bbb; letter-spacing: 1px; margin-top: 4px; }
+  #counter { position: absolute; bottom: 600px; left: 0; right: 0; text-align: center; opacity: 0;
+             font-size: 150px; font-weight: 900; font-variant-numeric: tabular-nums;
+             text-shadow: 0 6px 30px rgba(0,0,0,.9); }
+  #counter small { display: block; font-size: 34px; font-weight: 700; letter-spacing: 6px; color: #ffb547; }
+  .lbl { position: absolute; top: 560px; font-size: 44px; font-weight: 900; letter-spacing: 4px; opacity: 0;
+         text-shadow: 0 4px 16px #000; }
+  #black { position: absolute; inset: 0; background: #000; opacity: 0; }
+  #mute { position: absolute; top: 480px; left: 0; right: 0; text-align: center; font-size: 46px;
+          font-weight: 800; letter-spacing: 10px; color: #9ad; opacity: 0; }
+</style>
+<script type="importmap">{ "imports": { "three": "./node_modules/three/build/three.module.js" } }</script>
+</head>
+<body>
+<div id="ui">
+  <div id="title">WHAT IF YOU PLAYED<br>BASKETBALL ON<br><span>THE MOON?</span></div>
+  <div class="stage" id="stage"><div class="num" id="snum"></div><div class="name" id="sname"></div></div>
+  <div class="chip" id="chip"></div>
+  <div id="counter"></div>
+  <div class="lbl" id="lblL" style="left:150px">EARTH</div>
+  <div class="lbl" id="lblR" style="right:170px">MOON</div>
+  <div id="mute">NO AIR · NO SOUND</div>
+  <div id="cap"></div>
+  <div id="black"></div>
+</div>
+<script type="module" src="./scene.js"></script>
+</body>
+</html>

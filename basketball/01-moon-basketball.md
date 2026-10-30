@@ -57,6 +57,7 @@
 
 **Fact check:**
 - Projectile range is R = v²·sin(2θ)/g. A typical free throw is ~7 m/s at ~52°. On the Moon that gives ≈ 29 m. This is simplified: it uses flat ground and ignores release height.
+- The render uses 6.8 m/s at 52° from a 2.1 m release height, which lands 29.2 m from the release point after 7.0 s in the air.
 - The NBA court is 94 ft ≈ 28.65 m.
 - The speed needed scales with √g, so 7 / 2.45 ≈ 2.8 m/s.
 - Sound needs a medium, and a vacuum carries none. No air also means no drag and no Magnus effect (the spin curve).
