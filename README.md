@@ -20,3 +20,9 @@ Short-form 3D reels.
 | # | Niche | Title | Status |
 |---|-------|-------|--------|
 | 01 | Basketball | [What if you played basketball on the Moon?](basketball/01-moon-basketball.md) | Script draft |
+
+## Posting rules
+
+- Captions always use real hashtags (`#basketball`), never URL-encoded (`%23basketball`), on every platform.
+- YouTube gets `#shorts` in the title. All platforms get the same body caption.
+- Label the post as AI-generated when the voiceover is synthetic.
